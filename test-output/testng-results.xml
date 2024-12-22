@@ -2,48 +2,114 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T00:10:10 IST" name="Practice Test Automation Application Sanity Test Suite" finished-at="2024-12-11T00:10:31 IST" duration-ms="20829">
+  <suite started-at="2024-12-22T23:54:31 IST" name="Default suite" finished-at="2024-12-22T23:55:13 IST" duration-ms="41515">
     <groups>
     </groups>
-    <test started-at="2024-12-11T00:10:10 IST" name="Practice Test Automation Application Sanity Test Cases" finished-at="2024-12-11T00:10:31 IST" duration-ms="20829">
-      <class name="com.pta.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:10 IST" name="setup" finished-at="2024-12-11T00:10:17 IST" duration-ms="6189" status="PASS">
+    <test started-at="2024-12-22T23:54:31 IST" name="Default test" finished-at="2024-12-22T23:55:13 IST" duration-ms="41515">
+      <class name="com.pta.qa.testcases.ContactPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:54:33 IST" name="setup" finished-at="2024-12-22T23:54:49 IST" duration-ms="15917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:17 IST" name="loginPageTitleTest" finished-at="2024-12-11T00:10:17 IST" duration-ms="39" status="PASS">
+        <test-method signature="fillContactFormTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:54:49 IST" name="fillContactFormTest" data-provider="getPTATestData" finished-at="2024-12-22T23:54:50 IST" duration-ms="1436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:17 IST" name="teardown" finished-at="2024-12-11T00:10:17 IST" duration-ms="821" status="PASS">
+        </test-method> <!-- fillContactFormTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:54:50 IST" name="teardown" finished-at="2024-12-22T23:54:51 IST" duration-ms="838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:17 IST" name="setup" finished-at="2024-12-11T00:10:22 IST" duration-ms="4989" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:54:51 IST" name="setup" finished-at="2024-12-22T23:55:00 IST" duration-ms="9079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="crmLogoImageTest()[pri:2, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:22 IST" name="crmLogoImageTest" finished-at="2024-12-11T00:10:23 IST" duration-ms="77" status="PASS">
+        <test-method signature="fillContactFormTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:55:00 IST" name="fillContactFormTest" data-provider="getPTATestData" finished-at="2024-12-22T23:55:01 IST" duration-ms="1254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test2@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crmLogoImageTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:23 IST" name="teardown" finished-at="2024-12-11T00:10:23 IST" duration-ms="761" status="PASS">
+        </test-method> <!-- fillContactFormTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:55:01 IST" name="teardown" finished-at="2024-12-22T23:55:02 IST" duration-ms="838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:23 IST" name="setup" finished-at="2024-12-11T00:10:29 IST" duration-ms="5423" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:55:02 IST" name="setup" finished-at="2024-12-22T23:55:11 IST" duration-ms="8614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:3, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:29 IST" name="loginTest" finished-at="2024-12-11T00:10:30 IST" duration-ms="1604" status="PASS">
+        <test-method signature="fillContactFormTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:55:11 IST" name="fillContactFormTest" data-provider="getPTATestData" finished-at="2024-12-22T23:55:12 IST" duration-ms="1193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test3@test.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.LoginPageTest@1530c739]" started-at="2024-12-11T00:10:30 IST" name="teardown" finished-at="2024-12-11T00:10:31 IST" duration-ms="800" status="PASS">
+        </test-method> <!-- fillContactFormTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@6bbe85a8]" started-at="2024-12-22T23:55:12 IST" name="teardown" finished-at="2024-12-22T23:55:13 IST" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.pta.qa.testcases.LoginPageTest -->
-    </test> <!-- Practice Test Automation Application Sanity Test Cases -->
-  </suite> <!-- Practice Test Automation Application Sanity Test Suite -->
+      </class> <!-- com.pta.qa.testcases.ContactPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

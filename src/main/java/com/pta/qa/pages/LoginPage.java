@@ -10,15 +10,15 @@ public class LoginPage extends TestBase{
 	private By password_txt = By.xpath("//input[@id='password']");
 	private By login_btn = By.xpath("//button[@id='submit']");
 	private By logout_btn = By.xpath("//a[normalize-space()='Log out']");
-	private By practiceTestAutomation_Img = By.xpath("//img[@alt='Practice Test Automation']");
+	private By practice_test_automation_img = By.xpath("//img[@alt='Practice Test Automation']");
 	
 	//Actions
-	public String validateLoginPageTitle() {
+	public String validate_loginpage_title() {
 		return driver.getTitle();
 	}
 	
-	public boolean validatePracticeTestAutomationImg() {
-		return  driver.findElement(practiceTestAutomation_Img).isDisplayed();
+	public boolean validate_practicetestautomation_img() {
+		return  driver.findElement(practice_test_automation_img).isDisplayed();
 	}
 	
 	public HomePage login(String username, String password) {

@@ -8,42 +8,38 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.pta.qa.base.TestBase;
+import com.pta.qa.pages.BlogPage;
 import com.pta.qa.pages.HomePage;
 import com.pta.qa.pages.LoginPage;
 
-public class LoginPageTest extends TestBase{
+public class BlogPageTest extends TestBase {
 	
 	LoginPage loginpage;
 	HomePage homepage;
+	BlogPage blogpage;
 	
-	public LoginPageTest() {
-		super();
+	public BlogPageTest() {
+		super();		
 	}	
 	
 	@BeforeMethod
 	public void setup() {
 		initialization();
 		loginpage = new LoginPage();
-	}
-	
+		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));	
+		blogpage = homepage.click_blog_lnk();
+	}	
 	
 	@Test(priority=1)
-	public void loginPageTitleTest() {
-		String title = loginpage.validate_loginpage_title();
-		assertEquals(title, "Test Login | Practice Test Automation","Login page title not matched");
+	public void blogPageTitleTest() {
+		String title = blogpage.validate_blogpage_title();
+		assertEquals(title, "Blog | Practice Test Automation");
 	}
 	
 	@Test(priority=2)
-	public void practiceTestAutomationImageTest() {
-		boolean flag = loginpage.validate_practicetestautomation_img();
-		Assert.assertTrue(flag);
+	public void blogLinkTest() {		
+		Assert.assertTrue(blogpage.validate_blog_txt());
 	}
-	
-	@Test(priority=3)
-	public void loginTest() {
-		homepage =  loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
-	
 	
 	@AfterMethod
 	public void teardown() {

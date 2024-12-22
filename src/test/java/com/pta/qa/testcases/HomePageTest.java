@@ -32,23 +32,23 @@ public class HomePageTest extends TestBase {
 	
 	@Test(priority=1)
 	public void homePageTitleTest() {		
-		String title = homepage.validateHomePageTitle();
+		String title = homepage.validate_homepage_title();
 		assertEquals(title, "Logged In Successfully | Practice Test Automation", "Home page title not matched");
 	}
 	
 	
 	@Test(priority=2)
-	public void verifyLoggedInSuccessfully_txt() {		
-		Assert.assertTrue(homepage.validate_loggedInSuccessfully_txt());
+	public void loggedInSuccessfullyTest() {		
+		Assert.assertTrue(homepage.validate_loggedinsuccessfully_txt());
 	}
 	
 	@Test(priority=3)
-	public void logout() {		
+	public void logoutTest() {		
 		homepage.click_logout_btn();
 	}
 	
 	@Test(priority=4)
-	public void verifyContactLinkTest() {		
+	public void contactLinkTest() {		
 		contactpage = homepage.click_contact_lnk();
 	}
 	
