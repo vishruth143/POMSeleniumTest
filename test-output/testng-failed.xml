@@ -5,9 +5,9 @@
     <classes>
       <class name="com.pta.qa.testcases.ContactPageTest">
         <methods>
+          <include name="contactPageTitleTest"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="fillContactFormTest"/>
         </methods>
       </class> <!-- com.pta.qa.testcases.ContactPageTest -->
     </classes>

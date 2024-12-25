@@ -2,6 +2,8 @@ package com.pta.qa.testcases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +25,7 @@ public class CoursesPageTest extends TestBase {
 	}	
 	
 	@BeforeMethod
-	public void setup() {
+	public void setup() throws MalformedURLException {
 		initialization();
 		loginpage = new LoginPage();
 		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));	
