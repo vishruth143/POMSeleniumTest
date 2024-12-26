@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.pta.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="contactLinkTest"/>
+          <include name="logoutTest"/>
+          <include name="homePageTitleTest"/>
+          <include name="loggedInSuccessfullyTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.HomePageTest -->
+      <class name="com.pta.qa.testcases.BlogPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="blogLinkTest"/>
+          <include name="setup"/>
+          <include name="blogPageTitleTest"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.BlogPageTest -->
+      <class name="com.pta.qa.testcases.PracticePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="practiceLinkTest"/>
+          <include name="practicePageTitleTest"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.PracticePageTest -->
+      <class name="com.pta.qa.testcases.CoursesPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="coursesLinkTest"/>
+          <include name="courcesPageTitleTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.CoursesPageTest -->
+      <class name="com.pta.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="practiceTestAutomationImageTest"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.LoginPageTest -->
+      <class name="com.pta.qa.testcases.ContactPageTest">
+        <methods>
+          <include name="contactPageTitleTest"/>
+          <include name="contactLinkTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="fillContactFormTest"/>
+        </methods>
+      </class> <!-- com.pta.qa.testcases.ContactPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -53,28 +53,29 @@ public class TestBase {
 	}
 	
 	public static void initialization() throws MalformedURLException {
-		String browserName = prop.getProperty("browser");
+		//String browser = prop.getProperty("browser");
+		String browser = System.getProperty("browser", "chrome");
 		WebDriver baseDriver = null;
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
-		if(browserName.equals("chrome")) {			
+		if(browser.equals("chrome")) {			
 			//WebDriverManager.chromedriver().setup();
 			//baseDriver = new ChromeDriver();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.LINUX);
-			baseDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-		} else if(browserName.equals("firefox")) {
+			baseDriver = new RemoteWebDriver(new URL("http://localhost:4441/wd/hub"), cap);
+		} else if(browser.equals("firefox")) {
 			//WebDriverManager.firefoxdriver().setup();
 			//baseDriver = new FirefoxDriver();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.LINUX);
-			baseDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-		} else if(browserName.equals("edge")) {
+			baseDriver = new RemoteWebDriver(new URL("http://localhost:4442/wd/hub"), cap);
+		} else if(browser.equals("edge")) {
 			//WebDriverManager.edgedriver().setup();
 			//baseDriver = new EdgeDriver();
 			cap.setBrowserName("MicrosoftEdge");
 			cap.setPlatform(Platform.LINUX);
-			baseDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+			baseDriver = new RemoteWebDriver(new URL("http://localhost:4443/wd/hub"), cap);
 		}
 		
 		// Add the WebDriver listener

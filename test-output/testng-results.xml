@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-25T16:13:27 IST" name="Default suite" finished-at="2024-12-25T16:14:08 IST" duration-ms="41667">
+  <suite started-at="2024-12-26T01:36:49 IST" name="Default suite" finished-at="2024-12-26T01:37:29 IST" duration-ms="40065">
     <groups>
     </groups>
-    <test started-at="2024-12-25T16:13:27 IST" name="Default test" finished-at="2024-12-25T16:14:08 IST" duration-ms="41667">
-      <class name="com.pta.qa.testcases.ContactPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@17f9d882]" started-at="2024-12-25T16:13:27 IST" name="setup" finished-at="2024-12-25T16:14:06 IST" duration-ms="38833" status="PASS">
+    <test started-at="2024-12-26T01:36:49 IST" name="Default test" finished-at="2024-12-26T01:37:29 IST" duration-ms="40065">
+      <class name="com.pta.qa.testcases.BlogPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:36:49 IST" name="setup" finished-at="2024-12-26T01:37:10 IST" duration-ms="21162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="contactPageTitleTest()[pri:1, instance:com.pta.qa.testcases.ContactPageTest@17f9d882]" started-at="2024-12-25T16:14:06 IST" name="contactPageTitleTest" finished-at="2024-12-25T16:14:06 IST" duration-ms="108" status="PASS">
+        <test-method signature="blogPageTitleTest()[pri:1, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:37:10 IST" name="blogPageTitleTest" finished-at="2024-12-26T01:37:11 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.ContactPageTest@17f9d882]" started-at="2024-12-25T16:14:06 IST" name="teardown" finished-at="2024-12-25T16:14:08 IST" duration-ms="2619" status="PASS">
+        </test-method> <!-- blogPageTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:37:11 IST" name="teardown" finished-at="2024-12-26T01:37:11 IST" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.pta.qa.testcases.ContactPageTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:37:11 IST" name="setup" finished-at="2024-12-26T01:37:29 IST" duration-ms="17480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="blogLinkTest()[pri:2, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:37:29 IST" name="blogLinkTest" finished-at="2024-12-26T01:37:29 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blogLinkTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.pta.qa.testcases.BlogPageTest@543295b0]" started-at="2024-12-26T01:37:29 IST" name="teardown" finished-at="2024-12-26T01:37:29 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.pta.qa.testcases.BlogPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

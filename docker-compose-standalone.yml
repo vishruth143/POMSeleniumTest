@@ -1,0 +1,27 @@
+services:
+  chrome:
+    image: selenium/standalone-chrome
+    hostname: chrome
+    privileged: true
+    shm_size: 2g
+    ports:
+      - "4441:4444" # Map Selenium server port
+      - "7901:7900" # Map noVNC server port	  
+  
+  firefox:
+      image: selenium/standalone-firefox
+      hostname: firefox
+      privileged: true
+      shm_size: 2g
+      ports:
+        - "4442:4444" # Map Selenium server port
+        - "7902:7900" # Map noVNC server port
+
+  edge:
+      image: selenium/standalone-edge
+      hostname: edge
+      privileged: true
+      shm_size: 2g
+      ports:
+        - "4443:4444" # Map Selenium server port
+        - "7903:7900" # Map noVNC server port
