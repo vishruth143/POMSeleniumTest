@@ -1,0 +1,4 @@
+2024-12-27 11:09:45,417  INFO [main] TestBase:68 - Launch Chrome
+2024-12-27 11:09:56,745 DEBUG [main] BlogPageTest:41 - Validate BLOG page title 
+2024-12-27 11:09:56,909  INFO [main] TestBase:68 - Launch Chrome
+2024-12-27 11:10:03,280 DEBUG [main] BlogPageTest:47 - Validate BLOG page title 

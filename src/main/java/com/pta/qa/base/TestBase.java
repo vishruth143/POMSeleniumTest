@@ -10,6 +10,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -34,12 +35,13 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static Logger log;
 	public static ExtentSparkReporter sparkReporter;
 	public static ExtentReports extent;
-	public static ExtentTest test;
-	
-	
+	public static ExtentTest test;	
+		
 	public TestBase() {
+		 log = Logger.getLogger(TestBase.class);
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -63,18 +65,21 @@ public class TestBase {
 			//baseDriver = new ChromeDriver();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.LINUX);
+			log.info("Launch Chrome");
 			baseDriver = new RemoteWebDriver(new URL("http://localhost:4441/wd/hub"), cap);
 		} else if(browser.equals("firefox")) {
 			//WebDriverManager.firefoxdriver().setup();
 			//baseDriver = new FirefoxDriver();
 			cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.LINUX);
+			log.info("Launch Firefox");
 			baseDriver = new RemoteWebDriver(new URL("http://localhost:4442/wd/hub"), cap);
 		} else if(browser.equals("edge")) {
 			//WebDriverManager.edgedriver().setup();
 			//baseDriver = new EdgeDriver();
 			cap.setBrowserName("MicrosoftEdge");
 			cap.setPlatform(Platform.LINUX);
+			log.info("Launch MicrosoftEdge");
 			baseDriver = new RemoteWebDriver(new URL("http://localhost:4443/wd/hub"), cap);
 		}
 		
@@ -101,15 +106,14 @@ public class TestBase {
 	}
 	
 	public static String captureScrenshot() throws IOException {
-		String fileSparator = System.getProperty("file.speparator");
+		String fileSparator = System.getProperty("file.separator");
 		String extentReportPath = "."+fileSparator+"Reports";
 		String screenShotPath = extentReportPath+fileSparator+"screenshots";
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		String screenShotName = "screenshot"+System.currentTimeMillis()+".png";
 		String ScreenShotPath = screenShotPath+fileSparator+screenShotName;
 		FileUtils.copyFile(srcFile, new File(ScreenShotPath));
-		return "."+fileSparator+"screenshots"+fileSparator+screenShotName;
-			
+		return "."+fileSparator+"screenshots"+fileSparator+screenShotName;			
 	}
 }
 

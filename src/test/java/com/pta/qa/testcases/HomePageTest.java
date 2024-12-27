@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.net.MalformedURLException;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,18 +16,20 @@ import com.pta.qa.pages.HomePage;
 import com.pta.qa.pages.LoginPage;
 
 public class HomePageTest extends TestBase {
-	
+	Logger log;
 	HomePage homepage;
 	LoginPage loginpage;
 	ContactPage contactpage;
 	
 	public HomePageTest() {
 		super();
+		log = Logger.getLogger(HomePageTest.class);
 	}	
 	
 	@BeforeMethod
 	public void setup() throws MalformedURLException {
 		initialization();
+		initializeReport();
 		loginpage = new LoginPage();
 		contactpage = new ContactPage();
 		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));		
