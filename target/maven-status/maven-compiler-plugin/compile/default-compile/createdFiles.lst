@@ -1,0 +1,10 @@
+com\pta\qa\pages\BlogPage.class
+com\pta\qa\pages\CoursesPage.class
+com\pta\qa\pages\ContactPage.class
+com\pta\qa\util\WebDriverEventLogger.class
+com\pta\qa\base\TestBase.class
+com\pta\qa\util\CustomListener.class
+com\pta\qa\util\TestUtil.class
+com\pta\qa\pages\HomePage.class
+com\pta\qa\pages\PracticePage.class
+com\pta\qa\pages\LoginPage.class

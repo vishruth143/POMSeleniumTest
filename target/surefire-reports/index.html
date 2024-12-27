@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">19 methods, 1 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="contactPageTitleTestFailed">contactPageTitleTestFailed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,6 +125,86 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.BlogPageTest" class="method navigator-link" hash-for-method="blogPageTitleTest">blogPageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="contactLinkTest">contactLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="contactLinkTest">contactLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="contactPageTitleTest">contactPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.CoursesPageTest" class="method navigator-link" hash-for-method="courcesPageTitleTest">courcesPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.CoursesPageTest" class="method navigator-link" hash-for-method="coursesLinkTest">coursesLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="fillContactFormTest(Test1, Test1, test1@test.com, Testing)">fillContactFormTest(Test1, Test1, test1@test.com, Testing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="fillContactFormTest(Test2, Test2, test2@test.com, Testing)">fillContactFormTest(Test2, Test2, test2@test.com, Testing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.ContactPageTest" class="method navigator-link" hash-for-method="fillContactFormTest(Test3, Test3, test3@test.com, Testing)">fillContactFormTest(Test3, Test3, test3@test.com, Testing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageTitleTest">homePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="loggedInSuccessfullyTest">loggedInSuccessfullyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="logoutTest">logoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.PracticePageTest" class="method navigator-link" hash-for-method="practiceLinkTest">practiceLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.PracticePageTest" class="method navigator-link" hash-for-method="practicePageTitleTest">practicePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.pta.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="practiceTestAutomationImageTest">practiceTestAutomationImageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -123,6 +217,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pta.qa.testcases.ContactPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactPageTitleTestFailed">
+                  </a> <!-- contactPageTitleTestFailed -->
+                  <span class="method-name">contactPageTitleTestFailed</span>
+                  <div class="stack-trace">java.lang.AssertionError: Contact page title not matched expected [Contact | Practice Test Automation | Selenium WebDriver1] but found [Contact | Practice Test Automation | Selenium WebDriver]
+	at com.pta.qa.testcases.ContactPageTest.contactPageTitleTestFailed(ContactPageTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,6 +259,161 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pta.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTitleTest">
+                  </a> <!-- loginPageTitleTest -->
+                  <span class="method-name">loginPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="practiceTestAutomationImageTest">
+                  </a> <!-- practiceTestAutomationImageTest -->
+                  <span class="method-name">practiceTestAutomationImageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pta.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactLinkTest">
+                  </a> <!-- contactLinkTest -->
+                  <span class="method-name">contactLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageTitleTest">
+                  </a> <!-- homePageTitleTest -->
+                  <span class="method-name">homePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loggedInSuccessfullyTest">
+                  </a> <!-- loggedInSuccessfullyTest -->
+                  <span class="method-name">loggedInSuccessfullyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest">
+                  </a> <!-- logoutTest -->
+                  <span class="method-name">logoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pta.qa.testcases.ContactPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactLinkTest">
+                  </a> <!-- contactLinkTest -->
+                  <span class="method-name">contactLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactPageTitleTest">
+                  </a> <!-- contactPageTitleTest -->
+                  <span class="method-name">contactPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillContactFormTest(Test1, Test1, test1@test.com, Testing)">
+                  </a> <!-- fillContactFormTest(Test1, Test1, test1@test.com, Testing) -->
+                  <span class="method-name">fillContactFormTest</span>
+                  <span class="parameters">(Test1,Test1,test1@test.com,Testing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillContactFormTest(Test2, Test2, test2@test.com, Testing)">
+                  </a> <!-- fillContactFormTest(Test2, Test2, test2@test.com, Testing) -->
+                  <span class="method-name">fillContactFormTest</span>
+                  <span class="parameters">(Test2,Test2,test2@test.com,Testing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillContactFormTest(Test3, Test3, test3@test.com, Testing)">
+                  </a> <!-- fillContactFormTest(Test3, Test3, test3@test.com, Testing) -->
+                  <span class="method-name">fillContactFormTest</span>
+                  <span class="parameters">(Test3,Test3,test3@test.com,Testing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pta.qa.testcases.PracticePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="practiceLinkTest">
+                  </a> <!-- practiceLinkTest -->
+                  <span class="method-name">practiceLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="practicePageTitleTest">
+                  </a> <!-- practicePageTitleTest -->
+                  <span class="method-name">practicePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pta.qa.testcases.CoursesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="courcesPageTitleTest">
+                  </a> <!-- courcesPageTitleTest -->
+                  <span class="method-name">courcesPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coursesLinkTest">
+                  </a> <!-- coursesLinkTest -->
+                  <span class="method-name">coursesLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -157,6 +426,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.pta.qa.testcases.BlogPageTest&quot;/&gt;
+      &lt;class name=&quot;com.pta.qa.testcases.ContactPageTest&quot;/&gt;
+      &lt;class name=&quot;com.pta.qa.testcases.CoursesPageTest&quot;/&gt;
+      &lt;class name=&quot;com.pta.qa.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.pta.qa.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.pta.qa.testcases.PracticePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -170,7 +444,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +470,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'blogLinkTest')
-data.setCell(0, 2, 'com.pta.qa.testcases.BlogPageTest')
-data.setCell(0, 3, 506);
+data.setCell(0, 1, 'fillContactFormTest')
+data.setCell(0, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(0, 3, 7316);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'blogPageTitleTest')
-data.setCell(1, 2, 'com.pta.qa.testcases.BlogPageTest')
-data.setCell(1, 3, 104);
+data.setCell(1, 1, 'contactLinkTest')
+data.setCell(1, 2, 'com.pta.qa.testcases.HomePageTest')
+data.setCell(1, 3, 4420);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'fillContactFormTest')
+data.setCell(2, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(2, 3, 3892);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'fillContactFormTest')
+data.setCell(3, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(3, 3, 2899);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'com.pta.qa.testcases.LoginPageTest')
+data.setCell(4, 3, 2049);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'coursesLinkTest')
+data.setCell(5, 2, 'com.pta.qa.testcases.CoursesPageTest')
+data.setCell(5, 3, 714);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'practiceLinkTest')
+data.setCell(6, 2, 'com.pta.qa.testcases.PracticePageTest')
+data.setCell(6, 3, 555);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logoutTest')
+data.setCell(7, 2, 'com.pta.qa.testcases.HomePageTest')
+data.setCell(7, 3, 551);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'blogLinkTest')
+data.setCell(8, 2, 'com.pta.qa.testcases.BlogPageTest')
+data.setCell(8, 3, 439);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'practiceTestAutomationImageTest')
+data.setCell(9, 2, 'com.pta.qa.testcases.LoginPageTest')
+data.setCell(9, 3, 294);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'contactLinkTest')
+data.setCell(10, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(10, 3, 260);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginPageTitleTest')
+data.setCell(11, 2, 'com.pta.qa.testcases.LoginPageTest')
+data.setCell(11, 3, 164);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'contactPageTitleTest')
+data.setCell(12, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(12, 3, 152);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loggedInSuccessfullyTest')
+data.setCell(13, 2, 'com.pta.qa.testcases.HomePageTest')
+data.setCell(13, 3, 151);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'contactPageTitleTestFailed')
+data.setCell(14, 2, 'com.pta.qa.testcases.ContactPageTest')
+data.setCell(14, 3, 130);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'blogPageTitleTest')
+data.setCell(15, 2, 'com.pta.qa.testcases.BlogPageTest')
+data.setCell(15, 3, 97);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'homePageTitleTest')
+data.setCell(16, 2, 'com.pta.qa.testcases.HomePageTest')
+data.setCell(16, 3, 82);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'practicePageTitleTest')
+data.setCell(17, 2, 'com.pta.qa.testcases.PracticePageTest')
+data.setCell(17, 3, 65);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'courcesPageTitleTest')
+data.setCell(18, 2, 'com.pta.qa.testcases.CoursesPageTest')
+data.setCell(18, 3, 19);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 610 ms</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -235,31 +577,266 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.ContactPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">reportSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.pta.qa.testcases.BlogPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">blogPageTitleTest</span>
-                <span class="method-start">59377 ms</span>
+                <span class="method-start">44300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">59486 ms</span>
+                <span class="method-start">44406 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">62772 ms</span>
+                <span class="method-start">45219 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">blogLinkTest</span>
-                <span class="method-start">74253 ms</span>
+                <span class="method-start">61741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">74762 ms</span>
+                <span class="method-start">62185 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.ContactPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contactPageTitleTest</span>
+                <span class="method-start">82743 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">82896 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">83388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contactPageTitleTestFailed</span>
+                <span class="method-start">100227 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">100373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">100803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contactLinkTest</span>
+                <span class="method-start">114094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">114355 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">119300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fillContactFormTest(Test1, Test1, test1@test.com, Testing)</span>
+                <span class="method-start">131910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">139228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">139558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fillContactFormTest(Test2, Test2, test2@test.com, Testing)</span>
+                <span class="method-start">152610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">155511 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">155743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fillContactFormTest(Test3, Test3, test3@test.com, Testing)</span>
+                <span class="method-start">167065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">170958 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.CoursesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">171145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">courcesPageTitleTest</span>
+                <span class="method-start">178161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">178180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">178321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">coursesLinkTest</span>
+                <span class="method-start">184458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">185172 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">185412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homePageTitleTest</span>
+                <span class="method-start">191891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">191983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">192167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loggedInSuccessfullyTest</span>
+                <span class="method-start">198476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">198632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">198803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutTest</span>
+                <span class="method-start">203990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">204542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">204940 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contactLinkTest</span>
+                <span class="method-start">213943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">218364 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">218627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPageTitleTest</span>
+                <span class="method-start">223950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">224114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">224353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">practiceTestAutomationImageTest</span>
+                <span class="method-start">230035 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">230330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">230605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">234250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">236300 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.PracticePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">236518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">practicePageTitleTest</span>
+                <span class="method-start">243625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">243690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">245288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">practiceLinkTest</span>
+                <span class="method-start">253047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">253605 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pta.qa.testcases.ContactPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">reportClosure</span>
+                <span class="method-start">254057 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
