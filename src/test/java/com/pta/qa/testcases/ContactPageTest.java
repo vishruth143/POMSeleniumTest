@@ -48,7 +48,8 @@ public class ContactPageTest extends TestBase {
 		contactpage = homepage.click_contact_lnk();
 	}
 
-	@Test(priority = 1)
+//	@Test(priority = 1, threadPoolSize = 3, invocationCount = 3, timeOut = 1000)
+	@Test
 	public void contactPageTitleTest() {
 		String title = contactpage.validate_contactpage_title();
 		String methodName = new Exception().getStackTrace()[0].getMethodName();		
