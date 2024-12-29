@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pta.qa.testcases.BlogPageTest">
+      <class name="com.pta.qa.testcases.ContactPageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="blogLinkTest"/>
           <include name="setup"/>
-          <include name="blogPageTitleTest"/>
+          <include name="contactPageTitleTestFailed"/>
+          <include name="teardown"/>
+          <include name="reportClosure"/>
+          <include name="reportSetup"/>
         </methods>
-      </class> <!-- com.pta.qa.testcases.BlogPageTest -->
+      </class> <!-- com.pta.qa.testcases.ContactPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

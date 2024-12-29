@@ -3,6 +3,7 @@
 <suite name="Practice Test Automation Application Test Suite">
 	<listeners>
 		<listener class-name="com.pta.qa.util.CustomListener"/>
+		<listener class-name="com.pta.qa.util.MyTransformer"/>
 	</listeners>
 	<test name="Practice Test Automation Application Test Cases">
 		<classes>

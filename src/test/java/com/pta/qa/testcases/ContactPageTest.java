@@ -11,7 +11,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,6 +19,7 @@ import com.pta.qa.base.TestBase;
 import com.pta.qa.pages.ContactPage;
 import com.pta.qa.pages.HomePage;
 import com.pta.qa.pages.LoginPage;
+import com.pta.qa.util.RetryAnalyzer;
 import com.pta.qa.util.TestUtil;
 
 public class ContactPageTest extends TestBase {
@@ -46,8 +46,7 @@ public class ContactPageTest extends TestBase {
 		loginpage = new LoginPage();
 		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		contactpage = homepage.click_contact_lnk();
-	}	
-
+	}
 
 	@Test(priority = 1)
 	public void contactPageTitleTest() {
@@ -62,7 +61,8 @@ public class ContactPageTest extends TestBase {
 				"Contact page title not matched");		
 	}
 	
-	@Test(priority = 2)
+//	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+	@Test
 	public void contactPageTitleTestFailed() {
 		String title = contactpage.validate_contactpage_title();
 		String methodName = new Exception().getStackTrace()[0].getMethodName();		
@@ -73,9 +73,7 @@ public class ContactPageTest extends TestBase {
 		test.log(Status.INFO, "Verify the page title");
 		assertEquals(title, "Contact | Practice Test Automation | Selenium WebDriver1",
 				"Contact page title not matched");		
-	}
-	
-	
+	}	
 
 	@Test(priority = 3)
 	public void contactLinkTest() {
