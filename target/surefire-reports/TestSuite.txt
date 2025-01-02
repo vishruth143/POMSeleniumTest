@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 257.4 s <<< FAILURE! -- in TestSuite
-com.pta.qa.testcases.ContactPageTest.contactPageTitleTestFailed -- Time elapsed: 0.148 s <<< FAILURE!
+Tests run: 21, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 163.8 s <<< FAILURE! -- in TestSuite
+com.pta.qa.testcases.ContactPageTest.contactPageTitleTestFailed -- Time elapsed: 0.059 s <<< FAILURE!
 java.lang.AssertionError: Contact page title not matched expected [Contact | Practice Test Automation | Selenium WebDriver1] but found [Contact | Practice Test Automation | Selenium WebDriver]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.pta.qa.testcases.ContactPageTest.contactPageTitleTestFailed(ContactPageTest.java:74)
+	at com.pta.qa.testcases.ContactPageTest.contactPageTitleTestFailed(ContactPageTest.java:75)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

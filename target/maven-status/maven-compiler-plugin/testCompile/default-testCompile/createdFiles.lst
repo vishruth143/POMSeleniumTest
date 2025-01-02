@@ -1,6 +1,9 @@
-com\pta\qa\testcases\BlogPageTest.class
 com\pta\qa\testcases\CoursesPageTest.class
 com\pta\qa\testcases\LoginPageTest.class
 com\pta\qa\testcases\ContactPageTest.class
 com\pta\qa\testcases\HomePageTest.class
 com\pta\qa\testcases\PracticePageTest.class
+com\pta\qa\testcases\BlogPageTest.class
+com\qa\api\testcases\TestExamples.class
+com\qa\api\testcases\GetAndPostExamples.class
+com\qa\api\testcases\PutPatchDeleteExample.class
