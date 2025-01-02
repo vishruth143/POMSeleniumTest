@@ -28,11 +28,11 @@ jobs:
           run: docker --version
 
         - name: Verify Docker Compose installation
-          run: docker-compose --version
+          run: docker compose --version
 
         # Run Docker Compose
         - name: Run Docker Compose
-          run: docker-compose -f docker-compose-standalone.yml up -d
+          run: docker compose -f docker-compose-standalone.yml up -d
 
         # Verify running containers
         - name: List running containers
@@ -44,4 +44,4 @@ jobs:
 
         # Tear down Docker Compose
         - name: Tear Down Docker Compose
-          run: docker-compose -f docker-compose-standalone.yml down
+          run: docker compose -f docker-compose-standalone.yml down
