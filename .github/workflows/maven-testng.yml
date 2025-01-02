@@ -1,4 +1,4 @@
-	name: Maven Selenium TestNG CI
+name: Maven Selenium TestNG CI
 
 on:
   push:
