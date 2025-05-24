@@ -76,27 +76,3 @@
 5. Click Install.
 6. Follow the prompts to accept the license agreement and install.
 7. Restart Eclipse when prompted.
-
-## 🖥️ Run Selenium scripts using docker compose
-1. Navigate to the folder in cmd prompt where we have the `docker-compose-standalone.yml` file.
-2. Execute the command `docker compose -f docker-compose-standalone.yml up -d`
-3. Browser Containers and Access URLs.                                                                                                                                                                                      
-When you run the `docker-compose-standalone.yml` file for the first time, Docker will pull the Selenium Standalone images for Chrome, Firefox, and Edge browsers. Once the containers are up, you can access them as follows:
-
-🔗 Selenium WebDriver URLs:
-- [Chrome - http://localhost:4441/](http://localhost:4441/)
-- [Firefox - http://localhost:4442/](http://localhost:4442/)
-- [Edge - http://localhost:4443/](http://localhost:4443/)
-
-🖥️ noVNC Access (Remote Desktop UI):
-- [Chrome noVNC - http://localhost:7901/](http://localhost:7901/)
-- [Firefox noVNC - http://localhost:7902/](http://localhost:7902/)
-- [Edge noVNC - http://localhost:7903/](http://localhost:7903/)
-
-> **Password:** `secret` (use this when prompted to connect via noVNC)
-
-## 🖥️ Run TestNG files
-1. Open the test file. Right click on the test file and Select **Run As > 1 TestNG Test**
-
-
-

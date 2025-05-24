@@ -1,0 +1,34 @@
+# Maven target directory
+/target/
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA specific files (optional, for cross-IDE use)
+*.iml
+.idea/
+
+# Logs and test output
+*.log
+/test-output/
+/Reports/
+/screenshots/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Surefire/Failsafe Reports
+**/surefire-reports/
+**/failsafe-reports/
+
+# VS Code
+.vscode/
+
+# Screenshot output with nullReport
+nullReportsnullscreenshots*
+
+# Backup/link/shortcut files
+*.lnk
