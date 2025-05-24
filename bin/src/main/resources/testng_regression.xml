@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Test Automation Application Regression Test Suite">
+	<test name="Practice Test Automation Application Regression Test Cases">
+		<classes>
+			<class name="com.pta.qa.testcases.LoginPageTest"></class>
+			<class name="com.pta.qa.testcases.HomePageTest"></class>
+			<class name="com.pta.qa.testcases.PracticePageTest"></class>	
+			<class name="com.pta.qa.testcases.CoursesPageTest"></class>	
+			<class name="com.pta.qa.testcases.BlogPageTest"></class>	
+			<class name="com.pta.qa.testcases.ContactPageTest"></class>					
+		</classes>
+	</test>
+</suite>
