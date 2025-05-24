@@ -1,6 +1,6 @@
 # 🧪 Selenium - Page Objet Model/Page Chaining Model [Design Pattern] approach - Data Driven Framework - TestNG
 
-	A robust and scalable test automation framework using **Selenium WebDriver**, **TestNG**, **JAVA**, REST Assured. Supports both UI and API testing with environment-driven configuration and Docker integration.
+> A robust and scalable test automation framework using **Selenium WebDriver**, **TestNG**, **JAVA**, REST Assured. Supports both UI and API testing with environment-driven configuration and Docker integration.
 
 ## 🖥️ Framework Structure
 

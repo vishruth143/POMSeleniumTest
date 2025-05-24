@@ -13,7 +13,7 @@ public class LoginPage extends TestBase{
 	private By practice_test_automation_img = By.xpath("//img[@alt='Practice Test Automation']");
 	
 	//Actions
-	public String validate_loginpage_title() {
+	public String get_loginpage_title() {
 		return driver.getTitle();
 	}
 	
