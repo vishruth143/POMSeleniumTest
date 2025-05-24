@@ -44,10 +44,35 @@
 
 ## 🖥️ Add all the dependencies in pom.xml
 1. Create a new maven project in eclipse - `File > New > Maven Project`
-2. Add the dependencies required for the automation framework in between <dependencies> </dependencies> tags
+2. Add the dependencies required for the automation framework in between **<dependencies> </dependencies>** tags from `https://mvnrepository.com/`
+
+### Add the below depndencies
+- **selenium-java**
+- **webdrivermanager**
+- **testng**
+- **poi**
+- **poi-ooxml**
+- **poi-scratchpad**
+- **poi-ooxml-schemas**
+- **ooxml-schemas**
+- **openxml4j**
+- **extentreports**
+- **log4j-core**
+- **log4j-api**
+- **rest-assured**
+- **json-simple**
 
 ## 🖥️ To make the .files to visible on Package Explorer
 1. Click the View Menu (three vertical dots in the top-right corner of the Package Explorer).
 2. Select Filters
 3. Uncheck . resources* (this hides dotfiles/folders).
 4. Click OK.
+
+## 🖥️ Install TestNG on Eclipse IDE
+1. Open Eclipse IDE.
+2. Go to Help > Eclipse Marketplace.
+3. In the "Find" search bar, type: TestNG.
+4. Locate TestNG for Eclipse (usually by "beust.com").
+5. Click Install.
+6. Follow the prompts to accept the license agreement and install.
+7. Restart Eclipse when prompted.
