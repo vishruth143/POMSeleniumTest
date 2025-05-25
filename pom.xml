@@ -119,8 +119,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version> <!-- Use an appropriate version -->
 				<configuration>
-					<source>8</source>
-					<target>8</target>
+					<release>24</release>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -129,7 +128,7 @@
 				<version>3.5.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/testng_sanity.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/resources/testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
