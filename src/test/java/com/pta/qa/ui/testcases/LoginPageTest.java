@@ -42,46 +42,46 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=1)
 	public void loginPageTitleTest() throws IOException {		
         /*
-        Login Page - Test #01 : Verify Practice Test Automation [PTA] Application Login Page Title.
+        Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title.
         Steps:
-        01) Get PTA login page title.
-        02) Verify the login page title.
+        01) Get PTA 'Login' page title.
+        02) Verify the 'Login' page title.
         */
 		String className = new Exception().getStackTrace()[0].getClassName();
 		String methodName = new Exception().getStackTrace()[0].getMethodName();		
-		test = extent.createTest(className+" : "+methodName, "Sign in and verify the page title");
+		test = extent.createTest(className+" : "+methodName, "Login Page - Test #01: Practice Test Automation [PTA] Application 'Login' page title.");
 		test.assignCategory("Login Page");		
 		
 		log.info("*".repeat(100));
 		test.log(Status.INFO, "*".repeat(100));
 		
-		log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title.");
-		test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title.");
+		log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title.");
+		test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title.");
 		
 		log.info("*".repeat(100));
 		test.log(Status.INFO, "*".repeat(100));
 		
 		try {			
-			log.info("Step 01: Get PTA login page title.");
-			test.log(Status.INFO, "Step 01: Get PTA login page title.");
+			log.info("Step 01: Get PTA 'Login' page title.");
+			test.log(Status.INFO, "Step 01: Get PTA 'Login' page title.");
 			String title = loginpage.get_loginpage_title();
 			
-			log.info("Step 02: Verify the login page title.");
-			test.log(Status.INFO, "Step 02: Verify the login page title.");
-	        Assert.assertEquals(title, "Test Login | Practice Test Automation1", "Login page title not matched");
+			log.info("Step 02: Verify the 'Login' page title.");
+			test.log(Status.INFO, "Step 02: Verify the 'Login' page title.");
+	        Assert.assertEquals(title, "Test Login | Practice Test Automation1", "'Login' page title not matched");
 
-	        log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Passed");
-	        test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Passed");
+	        log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Passed");
+	        test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
-			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Failed");
-			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Failed");
+			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
+			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
-			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Failed");
-			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application Login Page Title - Failed");
+			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
+			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
@@ -90,13 +90,13 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=2)
 	public void practiceTestAutomationImageTest() throws IOException {		
 		 /*
-        Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo.
+        Login Page - Test #02: Verify Practice Test Automation [PTA] Application logo.
         Steps:
         01) Verify the PTA application logo is present.        
         */
 		String className = new Exception().getStackTrace()[0].getClassName();
 		String methodName = new Exception().getStackTrace()[0].getMethodName();		
-		test = extent.createTest(className+" : "+methodName, "Sign in and verify the page title");
+		test = extent.createTest(className+" : "+methodName, "Login Page - Test #02: Practice Test Automation [PTA] Application logo.");
 		test.assignCategory("Login Page");		
 		
 		log.info("*".repeat(100));
@@ -140,7 +140,7 @@ public class LoginPageTest extends TestBase{
         */
 		String className = new Exception().getStackTrace()[0].getClassName();
 		String methodName = new Exception().getStackTrace()[0].getMethodName();		
-		test = extent.createTest(className+" : "+methodName, "Sign in and verify the page title");
+		test = extent.createTest(className+" : "+methodName, "Login Page - Test #03: Practice Test Automation [PTA] login");
 		test.assignCategory("Login Page");		
 		
 		log.info("*".repeat(100));
