@@ -133,6 +133,10 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 
 > **Password:** `secret` (use this when prompted to connect via noVNC)
 
-## 🖥️ Run TestNG files
+## 🖥️ Run TestNG files individually
 1. Open the test file. Right click on the test file and Select **Run As > 1 TestNG Test**
 
+## 🖥️ Run TestNG Test Suite
+1. Ensure the project has TestNG library added. 
+	- Right-click project → Build Path → Configure Build Path → Libraries → check for TestNG.
+2. Open the `testng_regression.xml` file under `src/main/resources`. Right click and Select **Run As > 1 TestNG Suite**

@@ -62,7 +62,7 @@ public class BlogPageTest extends TestBase {
 		test.log(Status.INFO, "*".repeat(100));
 		
 		log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' Page Title.");
-		test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' Page Title.");
+		test.log(Status.INFO, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' Page Title.");
 		
 		log.info("*".repeat(100));
 		test.log(Status.INFO, "*".repeat(100));
