@@ -68,20 +68,20 @@ public class LoginPageTest extends TestBase{
 			
 			log.info("Step 02: Verify the 'Login' page title.");
 			test.log(Status.INFO, "Step 02: Verify the 'Login' page title.");
-	        Assert.assertEquals(title, "Test Login | Practice Test Automation1", "'Login' page title not matched");
+	        Assert.assertEquals(title, "Test Login | Practice Test Automation", "'Login' page title not matched");
 
 	        log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Passed");
-	        test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Passed");
+	        test.log(Status.PASS, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
-			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
+			test.log(Status.FAIL, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
-			test.log(Status.INFO, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
+			test.log(Status.FAIL, "Login Page - Test #01: Verify Practice Test Automation [PTA] Application 'Login' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
@@ -114,17 +114,17 @@ public class LoginPageTest extends TestBase{
 			boolean flag = loginpage.validate_practicetestautomation_img();
 			Assert.assertTrue(flag);
 			log.info("Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Passed");
-			test.log(Status.INFO, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Passed");
+			test.log(Status.PASS, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
-			test.log(Status.INFO, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
+			test.log(Status.FAIL, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
-			test.log(Status.INFO, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
+			test.log(Status.FAIL, "Login Page - Test #02 : Verify Practice Test Automation [PTA] Application logo - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }	
@@ -156,11 +156,11 @@ public class LoginPageTest extends TestBase{
 			test.log(Status.INFO, "Step 01: Provide username and password and verify the PTA login.");
 			homepage =  loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 			log.info("Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Passed");
-			test.log(Status.INFO, "Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Passed");
+			test.log(Status.PASS, "Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Passed");
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Failed");
-			test.log(Status.INFO, "Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Failed");
+			test.log(Status.FAIL, "Login Page - Test #03 : Verify Practice Test Automation [PTA] login - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }	

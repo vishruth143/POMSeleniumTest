@@ -82,17 +82,17 @@ public class ContactPageTest extends TestBase {
 				"Contact page title not matched");
 			
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
+			test.log(Status.PASS, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }	
@@ -133,17 +133,17 @@ public class ContactPageTest extends TestBase {
 				"Contact page title not matched");
 			
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
+			test.log(Status.PASS, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #01: Verify Practice Test Automation [PTA] Application 'CONTACT' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }			
@@ -174,17 +174,17 @@ public class ContactPageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and navigate to 'CONTACT' page and verify 'Contact' text.");
 			Assert.assertTrue(contactpage.validate_contact_txt());
 			log.info("CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Passed");
-			test.log(Status.INFO, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Passed");
+			test.log(Status.PASS, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #03: Verify 'Contact' text on 'CONTACT' page - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }
@@ -225,11 +225,11 @@ public class ContactPageTest extends TestBase {
 			contactpage.fill_contact_form(fn, ln, email, comment);
 			
 			log.info("CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Passed");
-			test.log(Status.INFO, "CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Passed");
+			test.log(Status.PASS, "CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Passed");
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Failed");
-			test.log(Status.INFO, "CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Failed");
+			test.log(Status.FAIL, "CONTACT Page - Test #04: Fill contact form on 'CONTACT' page - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }	

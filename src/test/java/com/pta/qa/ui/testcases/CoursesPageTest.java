@@ -74,17 +74,17 @@ public class CoursesPageTest extends TestBase {
 			test.log(Status.INFO, "Step 02: Verify the 'COURSES' page title.");
 			assertEquals(title, "Courses | Practice Test Automation");
 			log.info("COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Passed");
-			test.log(Status.INFO, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Passed");
+			test.log(Status.PASS, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
-			test.log(Status.INFO, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
+			test.log(Status.FAIL, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
-			test.log(Status.INFO, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
+			test.log(Status.FAIL, "COURSES Page - Test #01: Verify Practice Test Automation [PTA] Application 'COURSES' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
@@ -115,17 +115,17 @@ public class CoursesPageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and navigate to 'COURSES' page and verify 'Courses' text.");	
 			Assert.assertTrue(coursespage.validate_courses_txt());
 			log.info("COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Passed");
-			test.log(Status.INFO, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Passed");
+			test.log(Status.PASS, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
-			test.log(Status.INFO, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
+			test.log(Status.FAIL, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
-			test.log(Status.INFO, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
+			test.log(Status.FAIL, "COURSES Page - Test #02: Verify 'Courses' text on 'COURSES' page - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		

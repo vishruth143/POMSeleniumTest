@@ -77,17 +77,17 @@ public class BlogPageTest extends TestBase {
 			assertEquals(title, "Blog | Practice Test Automation");
 			
 			log.info("BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Passed");
-			test.log(Status.INFO, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Passed");
+			test.log(Status.PASS, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
-			test.log(Status.INFO, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
+			test.log(Status.FAIL, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
-			test.log(Status.INFO, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
+			test.log(Status.FAIL, "BLOG Page - Test #01: Verify Practice Test Automation [PTA] Application 'BLOG' page title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
@@ -118,17 +118,17 @@ public class BlogPageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and navigate to 'BLOG' page and verify 'Engaging with the Selenium Community and Expanding' text.");	
 			Assert.assertTrue(blogpage.validate_blog_txt());
 			log.info("BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Passed");
-			test.log(Status.INFO, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Passed");
+			test.log(Status.PASS, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
-			test.log(Status.INFO, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
+			test.log(Status.FAIL, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
-			test.log(Status.INFO, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
+			test.log(Status.FAIL, "BLOG Page - Test #02: Verify 'Engaging with the Selenium Community and Expanding' text on 'BLOG' page - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		

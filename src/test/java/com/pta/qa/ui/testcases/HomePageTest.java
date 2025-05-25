@@ -75,17 +75,17 @@ public class HomePageTest extends TestBase {
 			assertEquals(title, "Logged In Successfully | Practice Test Automation", "'HOME' page title not matched");
 			
 			log.info("Home Page - Test #01: Verify Practice Test Automation [PTA] application 'HOME' page title - Passed");
-			test.log(Status.INFO, "Home Page - Test #01: Verify Practice Test Automation [PTA] application 'HOME' page Title - Passed");
+			test.log(Status.PASS, "Home Page - Test #01: Verify Practice Test Automation [PTA] application 'HOME' page Title - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Home Page - Test #01: Verify Practice Test Automation [PTA] application 'HOME' page title - Failed");
-			test.log(Status.INFO, "Home Page - Test #01: Verify Practice Test Automation [PTA] Application 'HOME' Page Title - Failed");
+			test.log(Status.FAIL, "Home Page - Test #01: Verify Practice Test Automation [PTA] Application 'HOME' Page Title - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Home Page - Test #01: Verify Practice Test Automation [PTA] application 'HOME' page title - Failed");
-			test.log(Status.INFO, "Home Page - Test #01: Verify Practice Test Automation [PTA] Application 'HOME' Page Title - Failed");
+			test.log(Status.FAIL, "Home Page - Test #01: Verify Practice Test Automation [PTA] Application 'HOME' Page Title - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
@@ -118,17 +118,17 @@ public class HomePageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and Verify 'Logged In Successfully' text after login to PTA.");
 			Assert.assertTrue(homepage.validate_loggedinsuccessfully_txt());
 			log.info("Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Passed");
-			test.log(Status.INFO, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Passed");
+			test.log(Status.PASS, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Passed");
 		}catch(AssertionError ae) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
-			test.log(Status.INFO, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
+			test.log(Status.FAIL, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
 			log.error("Assertion failed: " + ae.getMessage());
 	        throw ae; // Re-throw so the test fails
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
-			test.log(Status.INFO, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
+			test.log(Status.FAIL, "Home Page - Test #02 : Verify 'Logged In Successfully' text after login to PTA - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }
@@ -160,11 +160,11 @@ public class HomePageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and logout.");			
 			homepage.click_logout_btn();
 			log.info("Home Page - Test #03: Verify 'Logout' after login to PTA - Passed");
-			test.log(Status.INFO, "Home Page - Test #03: Verify 'Logout' after login to PTA - Passed");
+			test.log(Status.PASS, "Home Page - Test #03: Verify 'Logout' after login to PTA - Passed");
 			}catch (Exception e) {
 				TestUtil.takeScreenShot(className+"_"+methodName);
 				log.info("Home Page - Test #03: Verify 'Logout' after login to PTA - Failed");
-				test.log(Status.INFO, "Home Page - Test #03: Verify 'Logout' after login to PTA - Failed");
+				test.log(Status.FAIL, "Home Page - Test #03: Verify 'Logout' after login to PTA - Failed");
 		        log.error("Exception occurred during test execution", e);
 		        throw e; // Re-throw so the test fails
 		    }
@@ -195,11 +195,11 @@ public class HomePageTest extends TestBase {
 			test.log(Status.INFO, "Step 01: Login to PTA and Verify navigation to 'CONTACT' page.");		
 			contactpage = homepage.click_contact_lnk();
 			log.info("Home Page - Test #04: Verify navigation to 'CONTACT' page - Passed");
-			test.log(Status.INFO, "Home Page - Test #04: Verify navigation to 'CONTACT' page - Passed");
+			test.log(Status.PASS, "Home Page - Test #04: Verify navigation to 'CONTACT' page - Passed");
 		}catch (Exception e) {
 			TestUtil.takeScreenShot(className+"_"+methodName);
 			log.info("Home Page - Test #04: Verify navigation to 'CONTACT' page - Failed");
-			test.log(Status.INFO, "Home Page - Test #04: Verify navigation to 'CONTACT' page - Failed");
+			test.log(Status.FAIL, "Home Page - Test #04: Verify navigation to 'CONTACT' page - Failed");
 	        log.error("Exception occurred during test execution", e);
 	        throw e; // Re-throw so the test fails
 	    }		
