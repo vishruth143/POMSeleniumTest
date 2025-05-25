@@ -7,7 +7,7 @@
 	</listeners>
 	<test name="Practice Test Automation Application Test Cases">
 		<classes>
-			<class name="com.pta.qa.testcases.ContactPageTest">
+			<class name="com.pta.qa.ui.testcases.ContactPageTest">
 				<methods>
 					<include name="contactPageTitleTest"/>
 					<include name="contactPageTitleTestFailed"/>

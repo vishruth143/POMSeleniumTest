@@ -3,9 +3,9 @@
 <suite name="Practice Test Automation Application Sanity Test Suite">
 	<test name="Practice Test Automation Application Sanity Test Cases">
 		<classes>
-			<class name="com.pta.qa.testcases.PracticePageTest"></class>	
-			<class name="com.pta.qa.testcases.CoursesPageTest"></class>	
-			<class name="com.pta.qa.testcases.BlogPageTest"></class>						
+			<class name="com.pta.qa.ui.testcases.PracticePageTest"></class>	
+			<class name="com.pta.qa.ui.testcases.CoursesPageTest"></class>	
+			<class name="com.pta.qa.ui.testcases.BlogPageTest"></class>						
 			<!-- 				
 			<class name="com.pta.qa.testcases.LoginPageTest"></class>
 			<class name="com.pta.qa.testcases.HomePageTest"></class>
