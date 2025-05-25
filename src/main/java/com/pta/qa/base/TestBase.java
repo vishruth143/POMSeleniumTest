@@ -96,7 +96,7 @@ public class TestBase {
 	}
 	
 	public static void initializeReport() {
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/extentSparkReport.html");
+		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/extentSparkReport.html");
 		sparkReporter.config().setDocumentTitle("PTA Automation Report");
 		sparkReporter.config().setReportName("PTA Automation Test Execution Report");
 		sparkReporter.config().setTheme(Theme.STANDARD);

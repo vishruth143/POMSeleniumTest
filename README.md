@@ -77,6 +77,44 @@
 6. Follow the prompts to accept the license agreement and install.
 7. Restart Eclipse when prompted.
 
+## 🖥️ Install Maven
+
+1. **Install Java (JDK)**  
+   - Download and install the Java Development Kit (JDK) from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html) or [Adoptium](https://adoptium.net/).
+
+2. **Download Maven**  
+   - Go to [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
+   - Download the binary zip archive, e.g. `apache-maven-3.9.9-bin.zip`.
+
+3. **Extract Maven**  
+   - Extract the archive to a directory like:  
+     ```
+     C:\Program Files\Apache\maven-3.9.9
+     ```
+
+4. **Set Environment Variables**
+
+   - **Add `MAVEN_HOME`**  
+     - Variable name: `MAVEN_HOME`  
+     - Variable value:  
+       ```
+       C:\Program Files\Apache\maven-3.9.9
+       ```
+
+   - **Add Maven `bin` to `PATH`**  
+     - In *System variables*, find and edit the `Path` variable  
+     - Add the following entry:  
+       ```
+       C:\Program Files\Apache\maven-3.9.9\bin
+       ```
+
+5. **Verify Installation**
+
+   - Open **Command Prompt** and run:  
+     ```bash
+     mvn -version
+     ```
+
 ## 🖥️ Run Selenium scripts using docker compose
 1. Navigate to the folder in cmd prompt where we have the `docker-compose-standalone.yml` file.
 2. Execute the command `docker compose -f docker-compose-standalone.yml up -d`
@@ -97,6 +135,4 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 
 ## 🖥️ Run TestNG files
 1. Open the test file. Right click on the test file and Select **Run As > 1 TestNG Test**
-
-
 

@@ -7,13 +7,16 @@ import java.net.MalformedURLException;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.pta.qa.base.TestBase;
 import com.pta.qa.pages.BlogPage;
 import com.pta.qa.pages.HomePage;
 import com.pta.qa.pages.LoginPage;
+import com.pta.qa.util.TestUtil;
 
 public class BlogPageTest extends TestBase {	
 	Logger log;
@@ -25,12 +28,16 @@ public class BlogPageTest extends TestBase {
 		super();
 		log = Logger.getLogger(BlogPageTest.class);	
 		log.setLevel(org.apache.log4j.Level.DEBUG);
-	}	
+	}
+	
+	@BeforeSuite
+	public void reportSetup() {
+		initializeReport();
+	}
 	
 	@BeforeMethod
 	public void setup() throws MalformedURLException {
-		initialization();
-		initializeReport();		
+		initialization();				
 		loginpage = new LoginPage();		
 		homepage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));	
 		blogpage = homepage.click_blog_lnk();
@@ -52,5 +59,12 @@ public class BlogPageTest extends TestBase {
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
+	}
+	
+	@AfterSuite
+	public void reportClosure() {
+		if (TestUtil.extent != null) {
+	        TestUtil.extent.flush();
+	    }
 	}
 }
