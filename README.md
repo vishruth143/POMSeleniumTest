@@ -147,9 +147,51 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 2. To disable a test case use
 	- use enabled=false
 	
-## 🖥️ To run Tests using Maven
-1. Your TestNG tests should be under src/test/java.
-2. Add `maven-compiler-plugin` `maven-surefire-plugin` to pom.xml.
+## 🖥️ To Run Tests Using Maven
+
+1. Ensure your TestNG tests are located under `src/test/java`.
+2. Add the following plugins to your `pom.xml`: `maven-compiler-plugin` `maven-surefire-plugin`
+3. Run the following command in the project root:
+      `mvn clean install`
+      
+🔍 Breakdown of mvn clean install
+
+🔹 **mvn** -
+Invokes Apache Maven, a build automation and project management tool.
+
+🔹 **clean** -
+Cleans the project by deleting the target/ directory, which contains compiled classes, JARs, and other build artifacts.
+
+🧹 Think of it as: "Start fresh by deleting all previously compiled/build files."
+
+🔹 **install** -
+
+🔹 Performs the following steps in order:
+
+	🔹 Compiles the source code (mvn compile)
+	🔹 Runs tests (mvn test)
+	🔹 Packages the compiled code into a .jar or .war (mvn package)
+	🔹 Installs the final artifact into your local Maven repository (typically ~/.m2/repository) for use in other projects
+
+📦 Think of it as: "Build the project, test it, and save it in your local Maven cache for reuse."
+
+✅ **NOTE: ** If you DO NOT specify `<suiteXmlFiles>` in `maven-surefire-plugin`, then:
+`mvn clean install` will run all TestNG tests found under `src/test/java`, as long as they follow these conditions:
+
+They are annotated with @Test from TestNG.
+They follow the naming convention that Maven Surefire recognizes (by default):
+
+Class names must match:
+
+*Test.java
+
+*Tests.java
+
+*TestCase.java
+
+They are located in src/test/java.
+
+🧪 In this case, Surefire will auto-discover test classes and run them using TestNG (assuming TestNG is on the classpath).
 
 ## 🖥️ Test Case retry mechanism
 **At test level**
