@@ -32,3 +32,6 @@ nullReportsnullscreenshots*
 
 # Backup/link/shortcut files
 *.lnk
+
+# Java compiled files
+/bin/
