@@ -15,12 +15,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.decorators.WebDriverDecorator;
 import org.openqa.selenium.support.events.EventFiringDecorator;
+import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -28,8 +27,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.pta.qa.util.TestUtil;
 import com.pta.qa.util.WebDriverEventLogger;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {	
 	
@@ -105,15 +102,29 @@ public class TestBase {
 		extent.attachReporter(sparkReporter);
 	}
 	
-	public static String captureScrenshot() throws IOException {
-		String fileSparator = System.getProperty("file.separator");
-		String extentReportPath = "."+fileSparator+"Reports";
-		String screenShotPath = extentReportPath+fileSparator+"screenshots";
-		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String screenShotName = "screenshot"+System.currentTimeMillis()+".png";
-		String ScreenShotPath = screenShotPath+fileSparator+screenShotName;
-		FileUtils.copyFile(srcFile, new File(ScreenShotPath));
-		return "."+fileSparator+"screenshots"+fileSparator+screenShotName;			
+	public static String captureScrenshot(ITestResult result) throws IOException {
+		String fileSeparator = System.getProperty("file.separator");
+		String extentReportPath = "." + fileSeparator + "Reports";
+		String screenshotPath = extentReportPath + fileSeparator + "screenshots";
+
+		// Ensure directory exists
+		File screenshotDir = new File(screenshotPath);
+		if (!screenshotDir.exists()) {
+			screenshotDir.mkdirs();
+		}
+
+		// Get class name and method name
+		String className = result.getTestClass().getRealClass().getSimpleName();
+		String methodName = result.getMethod().getMethodName();
+		String screenshotName = className + "_" + methodName + ".png";
+
+		// Take screenshot
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String fullPath = screenshotPath + fileSeparator + screenshotName;
+		FileUtils.copyFile(srcFile, new File(fullPath));
+
+		// Return relative path for ExtentReports
+		return "." + fileSeparator + "screenshots" + fileSeparator + screenshotName;
 	}
 }
 

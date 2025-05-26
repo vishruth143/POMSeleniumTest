@@ -19,11 +19,11 @@ public class CustomListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {		
-		//TestBase.test.log(Status.FAIL, result.getThrowable().getMessage());
-		TestBase.test.log(Status.FAIL, MarkupHelper.createLabel(result.getName().toUpperCase()+": FAIL", ExtentColor.RED));
+		TestBase.test.log(Status.FAIL, MarkupHelper.createLabel(result.getName().toUpperCase() + ": FAIL", ExtentColor.RED));
 		try {
-			TestBase.test.addScreenCaptureFromPath(TestBase.captureScrenshot());
-		} catch (IOException e) {			
+			String screenshotPath = TestBase.captureScrenshot(result);
+			TestBase.test.addScreenCaptureFromPath(screenshotPath);
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}	

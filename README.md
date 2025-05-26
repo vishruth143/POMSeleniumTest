@@ -1,4 +1,4 @@
-# 🧪 Selenium - Page Objet Model/Page Chaining Model [Design Pattern] approach - Data Driven Framework - TestNG
+IAnnotationTransformer# 🧪 Selenium - Page Objet Model/Page Chaining Model [Design Pattern] approach - Data Driven Framework - TestNG
 
 > A robust and scalable test automation framework using **Selenium WebDriver**, **TestNG**, **JAVA**, REST Assured. Supports both UI and API testing with environment-driven configuration and Docker integration.
 
@@ -146,3 +146,16 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 	- Mark the test with org.testng.annotations.@Test;
 2. To disable a test case use
 	- use enabled=false
+	
+## 🖥️ To run Tests using Maven
+1. Your TestNG tests should be under src/test/java.
+2. Add `maven-compiler-plugin` `maven-surefire-plugin` to pom.xml.
+
+## 🖥️ Test Case retry mechanism
+**At test level**
+1. Override `retry` method from the `IRetryAnalyzer` interface
+2. At test level `@Test(retryAnalyzer = RetryAnalyzer.class)`
+
+**At run time**
+1. Override `transform` method from the `IAnnotationTransformer` interface
+2. Add the listeners in between the `<listener></listener>` tags on `testng.xml`
