@@ -7,17 +7,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.json.simple.JSONObject;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 
 public class GetAndPostTest {	
+	
+	@BeforeClass
+    public void setup() {
+        baseURI = "https://reqres.in/api";
+    }
 
 	@Test	
-	public void test_get() {
-		baseURI = "https://reqres.in/api";
-		given().
-			get("/users?page=2").
+	public void test_get() {		
+		given()
+			.header("x-api-key", "reqres-free-v1")
+        .when()
+			.get("/users?page=2").
 		then().
 			statusCode(200).
 			body("data[4].first_name", equalTo("George")).
@@ -38,22 +45,25 @@ public class GetAndPostTest {
 		JSONObject request = new JSONObject();
 		request.put("name", "Vishva");
 		request.put("job", "SDET");
+		
 		String requestBody = "{\n" +
 	            "  \"name\": \"Vishva\",\n" +
 	            "  \"job\": \"SDET\"\n" +
 	            "}";
+		
 		System.out.println(request.toJSONString());
-		baseURI = "https://reqres.in/api";
-		given().
-			header("Content-Type", "application/json").
-			contentType(ContentType.JSON).
-			accept(ContentType.JSON).
-//			body(request.toJSONString()).
-			body(requestBody).
-		when().
-			post("/users").
-		then().
-			statusCode(201).
-			log().all();
+		
+		given()
+			.header("x-api-key", "reqres-free-v1")	
+			.header("Content-Type", "application/json")
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+//			.body(request.toJSONString())
+			.body(requestBody)
+		.when()
+			.post("/users")
+		.then()
+			.statusCode(201)
+			.log().all();
 	}
 }

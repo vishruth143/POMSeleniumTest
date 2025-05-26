@@ -140,3 +140,9 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 1. Ensure the project has TestNG library added. 
 	- Right-click project → Build Path → Configure Build Path → Libraries → check for TestNG.
 2. Open the `testng_regression.xml` file under `src/main/resources`. Right click and Select **Run As > 1 TestNG Suite**
+
+## 🖥️ To ignore/disable a Test Case in TestNG
+1. To ignore a test case use
+	- Mark the test with org.testng.annotations.@Test;
+2. To disable a test case use
+	- use enabled=false

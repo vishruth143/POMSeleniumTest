@@ -10,7 +10,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
+import org.testng.annotations.Ignore;
 import com.aventstack.extentreports.Status;
 import com.pta.qa.base.TestBase;
 import com.pta.qa.pages.HomePage;
@@ -87,7 +87,7 @@ public class LoginPageTest extends TestBase{
 	    }		
 	}
 	
-	@Test(priority=2)
+	@Test(enabled=false, priority=2)
 	public void practiceTestAutomationImageTest() throws IOException {		
 		 /*
         Login Page - Test #02: Verify Practice Test Automation [PTA] Application logo.
@@ -131,6 +131,7 @@ public class LoginPageTest extends TestBase{
 		
 	}
 	
+	@Ignore
 	@Test(priority=3)
 	public void loginTest() throws IOException {
 		 /*
