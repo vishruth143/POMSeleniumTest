@@ -159,3 +159,7 @@ When you run the `docker-compose-standalone.yml` file for the first time, Docker
 **At run time**
 1. Override `transform` method from the `IAnnotationTransformer` interface
 2. Add the listeners in between the `<listener></listener>` tags on `testng.xml`
+
+## 🖥️ Capture screenshot at failure
+1. Override `onTestSuccess` `onTestFailure` methods from the `ITestListener` interface
+2. Add the listeners in between the `<listener></listener>` tags on `testng.xml`
